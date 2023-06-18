@@ -1,38 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
-.App{
+.App {
   display: flex;
   justify-content: center;
   flex-direction: column;
   font-family: 'Lexend Deca', sans-serif;
-  font-size: 25px;
+  font-size: 4vw; /* Responsive font size based on viewport width */
 }
 
-body{
-  padding: 0%;
-  margin: 0%;
+body {
+  padding: 0;
+  margin: 0;
 }
 
-.TitleSection{
-    width: 100%;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(to right, #667eea, #764ba2);
-    color: #fff;
-    text-align: center;
+.TitleSection {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: #fff;
+  text-align: center;
 }
 
-.TitleSection input{
-  width: 300px;
+.TitleSection input {
+  width: 90%; /* Adjusted width for responsiveness */
   height: 40px;
   border-radius: 10px;
   border: 1px solid #6e1bc2;
   padding-left: 10px;
   font-size: 20px;
-  font-family:'Lexend Deca', sans-serif; 
-  
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 .App-input::placeholder {
@@ -40,6 +39,8 @@ body{
 }
 
 .App button {
+  width: 120px;
+  height: 40px;
   padding-left: 10px;
   background-color: #140225;
   color: #fff;
@@ -48,8 +49,6 @@ body{
   cursor: pointer;
   font-size: 20px;
   font-family: 'Lexend Deca', sans-serif;
-  width:120px;
-  height: 40px;
   margin-top: 18px;
   justify-content: center;
 }
@@ -63,19 +62,42 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:  #ffe6f2;
-  font-family:'Lexend Deca', sans-serif ;
-   
+  background-color: #ffe6f2;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
-.DisplaySection h1,h3,h4,img{
+.DisplaySection h1,
+.DisplaySection h3,
+.DisplaySection h4,
+.DisplaySection img {
   margin: 1px;
 }
 
- 
-.DisplaySection img{
+.DisplaySection img {
   width: 150px;
 }
 
+/* Media Query for mobile devices */
+@media (max-width: 767px) {
+  .TitleSection {
+    height: 200px;
+    /* Adjust other styles as needed for mobile devices */
+  }
 
+  .TitleSection input {
+    width: 100%;
+    /* Adjust other styles as needed for mobile devices */
+  }
 
+  .App button {
+    width: 100%;
+    /* Adjust other styles as needed for mobile devices */
+  }
+}
+
+/* Media Query for laptops and larger screens */
+@media (min-width: 768px) {
+  .App {
+    font-size: 20px; /* Adjusted font size for larger screens */
+  }
+}
