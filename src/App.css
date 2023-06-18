@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+.App{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 25px;
+}
+
+body{
+  padding: 0%;
+  margin: 0%;
+}
+
+.TitleSection{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: #fff;
+    text-align: center;
+}
+
+.TitleSection input{
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #6e1bc2;
+  padding-left: 10px;
+  font-size: 20px;
+  font-family:'Lexend Deca', sans-serif; 
+  
+}
+
+.App-input::placeholder {
+  color: #888;
+}
+
+.App button {
+  padding-left: 10px;
+  background-color: #140225;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Lexend Deca', sans-serif;
+  width:120px;
+  height: 40px;
+  margin-top: 18px;
+  justify-content: center;
+}
+
+.App button:hover {
+  background-color: #ffcd00;
+  color: #764ba2;
+}
+
+.DisplaySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:  #ffe6f2;
+  font-family:'Lexend Deca', sans-serif ;
+   
+}
+
+.DisplaySection h1,h3,h4,img{
+  margin: 1px;
+}
+
+ 
+.DisplaySection img{
+  width: 150px;
+}
+
+
+
